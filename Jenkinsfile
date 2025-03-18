@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-repo-url.git'
+                git branch: 'main', url: 'https://github.com/harsha5401/pycode18march.git'
             }
         }
         stage('Build Docker Image') {
